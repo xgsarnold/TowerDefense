@@ -25,9 +25,17 @@ namespace TowerDefense
                 MapLocation pathPoint6 = new MapLocation(5, 3, map);
                 MapLocation pathPoint7 = new MapLocation(6, 3, map);
             }
-            catch (Exception ex)
+            catch (OutOfBoundsException)
             {
                 Console.WriteLine(ex.Message);
+            }
+            catch ()
+            {
+                Console.WriteLine("Unhandled TowerDefenceException");
+            }
+            catch ()
+            {
+                Console.WriteLine("Unhandled Exception");
             }
 
             Array arr = [pathPoint1, pathPoint2, pathPoint3, pathPoint4, pathPoint5, pathPoint6, pathPoint7];
