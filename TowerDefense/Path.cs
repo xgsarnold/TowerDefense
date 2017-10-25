@@ -8,5 +8,11 @@ namespace TowerDefense
 {
     class Path
     {
+        public readonly Array PointArray;
+
+        public Path(Array pointArray)
+        {
+            PointArray = pointArray;
+        }
     }
 }
